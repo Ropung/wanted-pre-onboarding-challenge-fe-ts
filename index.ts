@@ -32,7 +32,7 @@ const updateTodo = (id: number, tags: [number, string]): void => {
   });
 };
 //delete(id기반 특정 할 일 삭제 가능, 모든 할 일, 특정 할 일의 특정 태그나 모든 태그 제거 가능)
-const deleteTodo = (id: number, tags: [number, string]): void => {
+const deleteTodo = (id: number, tags: Tag): void => {
   TodoList.filter((todo) => todo.id !== id);
 };
 const allDeleteTag = (id: number) => {
