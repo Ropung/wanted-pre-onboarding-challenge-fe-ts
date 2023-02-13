@@ -35,7 +35,7 @@ const updateTodo = (id: number, tags: [number, string]): void => {
 const deleteTodo = (id: number, tags: Tag): void => {
   TodoList.filter((todo) => todo.id !== id);
 };
-const allDeleteTag = (id: number) => {
+const deleteTag = (id: number) => {
   TodoList.filter((todo) => {
     if (todo.id === id) {
       return {
@@ -46,7 +46,7 @@ const allDeleteTag = (id: number) => {
     return todo;
   });
 };
-const allDeleteContent = (id: number) => {
+const deleteContent = (id: number) => {
   TodoList.map((todo) => {
     if (todo.id === id) {
       return {
